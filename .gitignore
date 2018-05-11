@@ -1,0 +1,28 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#Gradle temporary files
+build/
+wrapper/dists/
+.gradle/
+
+#Eclipse files
+**/.project
+**/.classpath
+**/.settings/
+**/bin/
+**/.tern-project
+
+#IntelliJ files
+**/*.iml
+**/.idea
+
+#Log file
+*.log
+
+docker/db
+**/out

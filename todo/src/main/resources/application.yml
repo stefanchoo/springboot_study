@@ -1,0 +1,42 @@
+# server configuration
+server:
+  port: 8080
+  context-path:
+
+
+# Spring configuration
+spring:
+  devtools:
+    remote:
+      secret: thisismysecret
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: springboot
+  jackson:
+    serialization:
+      indent_output: true
+
+# JWT
+jwt:
+  header: Authorization
+  secret: my-jwt-secret
+  expiration: 86400
+  tokenHead: "Bearer "
+  route:
+    authentication:
+      path: auth
+      refresh: refresh
+      register: "/auth/register"
+
+# Logging configuration
+
+logging:
+  level:
+    org.springframework:
+      data: debug
+      security: debug
+
+
+
